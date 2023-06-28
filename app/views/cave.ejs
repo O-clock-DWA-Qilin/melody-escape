@@ -1,0 +1,32 @@
+<%- include('partials/tronc'); %>
+<form>
+    <label for="code">Il faut entrer le code ici :</label>
+    <textarea id="code" name="code"></textarea>
+    <span id='error'>Désolé, tu ne peux pas ouvrir la cave, le code n'est pas bon...</span>
+
+    <input id="submit" type='submit' value='Valider'>
+</form>
+
+<script type="text/javascript">
+  const submit = document.getElementById('submit')
+  const error = document.getElementById('error');
+  const content = document.getElementById('code');
+  console.log(content.value)
+
+  error.style.display = 'none';
+
+  submit.addEventListener('click', (event) => {
+    event.preventDefault()
+    console.log(content.value)
+
+    if (content.value === '549374') {
+      error.style.display = 'none';
+      alert ("Bravo tu as réussi à ouvrir la porte, allons voir à l\'intérieur !")
+      document.location.href="/cave-interieur";
+    } else {
+      error.style.display = 'block';
+    }
+  })
+</script>
+</body>
+</html>

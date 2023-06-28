@@ -1,0 +1,31 @@
+<%- include('partials/tronc'); %>
+
+<script type="text/javascript">
+    document.onkeydown = checkKey;
+
+    let eventHistory =  '';
+
+    function checkKey(e) {
+
+        e = e || window.event;
+        
+        if (e.keyCode == '38') {
+        eventHistory = 'a'
+        }
+
+        if (e.keyCode == '40') {
+        eventHistory += 'b'
+        }
+        
+        if (e.keyCode == '39') {
+            eventHistory += 'c'
+        }
+
+        if (eventHistory === 'abc') {
+        alert('Bien joué ! tu as récupéré sur son ordinateur le mot de passe pour aller à la cave : 549374, note-le ! tu en auras besoin pour ouvrir la porte !')
+        document.location.href="/cave";
+        }
+  }
+</script>
+</body>
+</html>

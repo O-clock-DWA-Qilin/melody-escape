@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape-game maison hantée</title>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <img class='marche0'<%= img1 %>>
+    <img class='marche1'<%= img1 %>>
+    <img class='marche2'<%= img1 %>>
+    <img class='marche3'<%= img1 %>>
+    <img class='marche4'<%= img1 %>>
+    <img class='marche5'<%= img1 %>>
+    <img class='marche6'<%= img1 %>>
+    <h1><%= title %></h1>
+    <p><%= par %></p>
+
+<script type="text/javascript">
+    const marche = document.getElementsByClassName('marche2')[0];
+    const p = document.getElementsByTagName('p')[0]
+
+    marche.addEventListener('click', () => {
+        const indice = document.createElement('img');
+        indice.setAttribute('src', '/img/indice.png')
+        p.append(indice)
+    })
+</script>
+</body>
+</html>

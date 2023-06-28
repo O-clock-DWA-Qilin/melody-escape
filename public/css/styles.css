@@ -1,4 +1,81 @@
 body {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: aqua;
+    align-items: center;
+    background-color: #1b1b1b;
+    color: #FFFFFF;
+}
+
+h1 {
+    width: 40%;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    width: 40%;
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+#ro {
+    background-image: url('/img/grenier.png');
+    background-position: center;
+    background-position: center;
+    width: 500px;
+    min-height: 500px;
+}
+
+button, a  {
+    color:#FFFFFF;
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid #FFFFFF;
+}
+
+button:hover, a:hover {
+    background-color: #4e4a4a;
+}
+
+.marche0 {
+    padding-left : 1rem;
+}
+
+.marche1 {
+    padding-left : 5rem;
+}
+
+.marche2 {
+    padding-left : 9rem;
+}
+
+.marche3 {
+    padding-left : 13rem;
+}
+.marche4 {
+    padding-left : 17rem;
+}
+
+.marche5 {
+    padding-left : 21rem;
+}
+
+.marche6 {
+    padding-left : 25rem;
+}
+
+.card_container {
+    justify-content: center;
+    display: flex;
+    width: 60%;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: #13bdaf;
+
 }
