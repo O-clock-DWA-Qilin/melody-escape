@@ -68,8 +68,8 @@ button:hover, a:hover {
 .card_container {
     justify-content: center;
     display: flex;
-    width: 60%;
-    gap: 4rem;
+    width: 70%;
+    gap: 2.5rem;
     flex-wrap: wrap;
 }
 

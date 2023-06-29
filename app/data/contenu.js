@@ -10,8 +10,9 @@ const content = [
     new pageContent (`salle`, `src=/img/salle.png alt=salle`, `La décoration de cette salle laisse à désirer...`, `Mais revenons à nos moutons, il y a un papier sur la table, je me souviens que Rose aimait les maths...Elle m'a dit un jour qu'elle a caché un indice dans l'escalier, le résultat du calcul doit correspondre au numéro d'une marche précise !`, `src=/img/maths.png alt=maths : pythagore, a=3, b=4, c =?`),
     new pageContent (`cave`, `src=/img/cave.png alt=cave`, `Bien joué, cet indice là n'étais pas évident à trouver !`, `Maintenant il faut ouvrir la porte de la cave, j'espère que tu as bien noté le code...`, `src=`),
     new pageContent (`chambre`, `src=/img/chambre.png alt=chambre`, `Rose a vraiment caché des indices partout..`, `Regarde, il y a un mémory, elle qui adorait les jeux de sociétés, il cache forcément un indice !`, `src=`),
+    new pageContent (`bureau`, `src=/img/bureau.png alt=bureau`, `Beau bureau...`, `Bon, maintenant il va falloir décrypter ce code : [22 1] [4 1 14 19] [12 5] [7 18 5 14 9 5 18]`, `src=/img/codeIndice.png alt=indice A1, Z26`),
     new pageContent (`cave-interieur`, ` src=/img/cave-interieur.png alt=cave intérieur`, `Voilà la cave !`, `Regarde ! il y a une clef juste ici et un plan de la maison...Essayons de trouver quelle pièce elle va ouvrir et allons voir !`, `src=/img/plan.png alt=plan`),
-    new pageContent (`grenier`, `src=/img/grenier.png alt=grenier`, `Tu as trouvé le trésor ! bien joué !`, `Rose serait fière de voir que quelqu'un a enfin réussi à comprendre ses indices ! Maintenant il te reste à l'ouvir !`, `src=`)
+    new pageContent (`grenier`, `src=/img/grenier.png alt=grenier`, `Tu as trouvé le trésor, bien joué ! Ouvre-le !`, `Rose serait fière de voir que quelqu'un a enfin réussi à comprendre ses indices !`, `src=`)
 ]
 
 export default content;
